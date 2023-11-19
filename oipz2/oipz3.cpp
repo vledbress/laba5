@@ -54,14 +54,22 @@ int main()
     double h;
     int n;
     bool stream;
-   
-    std::cout << "enter a:"; std::cin >> a;       //ліва границя
-    std::cout << "enter b:"; std::cin >> b;       //права границя
-    std::cout << "enter n[3,int):"; std::cin >> n;//права границя внутрішнього циклу
-    std::cout << "enter h[1,int):"; std::cin >> h;//крок зовнішнього циклу
-    std::cout << "do you wanna to write to file(1,0):"; std::cin >> stream;
-    checkValidInput();
-    calculate_in_a_loop(a, b, h, n, stream);
-   
+    try {
+        std::cout << "enter a:"; std::cin >> a;       //ліва границя
+        std::cout << "enter b:"; std::cin >> b;       //права границя
+        std::cout << "enter n[3,int):"; std::cin >> n;//права границя внутрішнього циклу
+        std::cout << "enter h[1,int):"; std::cin >> h;//крок зовнішнього циклу
+        std::cout << "do you wanna to write to file(1,0):"; std::cin >> stream;
+        checkValidInput();
+        calculate_in_a_loop(a, b, h, n, stream);
+    }
+    catch (const char* ex) {
+        std::cout << ex << std::endl;
+        return -1;
+    }
+    catch (...) {
+        std::cout << "unknown error" << std::endl;
+        return -2;
+    }
 }
 

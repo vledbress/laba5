@@ -1,2 +1,3 @@
-﻿  oipz2.cpp
-  oipz2.vcxproj -> D:\учеба\uchc++\oipz2\x64\Debug\oipz2.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (oipz2.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  oipz3.cpp
+  oipz2.vcxproj -> D:\учеба\uchc++\oipz3\x64\Debug\oipz3.exe
